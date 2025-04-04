@@ -88,71 +88,6 @@ body {
   display: none;
 }
 
-/* Nav Media Queries */
-@media (max-width: 768px) {
-  .nav-nav {
-    padding: 10px 20px;
-  }
-
-  .nav-MenyCenter {
-    position: fixed;
-    top: 90px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: rgba(18, 17, 17, 0.95);
-    padding: 20px;
-    border-radius: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: all 0.3s ease;
-    visibility: hidden;
-  }
-
-  .nav-MenyCenter.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-MenyCenter button {
-    width: 100%;
-    height: 60px;
-    font-size: 18px;
-    border-radius: 12px;
-  }
-
-  .nav-mobile-menu {
-    display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-  }
-
-  #nav-LogotypHeader {
-    height: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-nav {
-    padding: 10px 15px;
-  }
-
-  #nav-LogotypHeader {
-    height: 50px;
-  }
-
-  .nav-MenyCenter button {
-    height: 50px;
-    font-size: 16px;
-  }
-}
-
 #LogotypHeader {
   height: 125px;
 }
@@ -789,6 +724,11 @@ body {
   #mc_embed_signup {
     width: 100% !important;
   }
+
+  #mc_embed_shell {
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -854,4 +794,23 @@ body {
 
 .nav-MenyCenter a {
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .nav-MenyCenter button {
+    height: 40px;
+    min-width: 100px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-nav {
+    padding: 10px 20px;
+  }
+
+  .nav-MenyCenter button {
+    height: 35px;
+    min-width: 80px;
+    font-size: 12px;
+  }
 }
